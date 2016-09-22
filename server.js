@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 var content = {
     title:'Article one Kanishka Soni'.
     heading:'Article-one'.
-    date: 'sept 22 2016'.
+    date: "sept 22 2016"
     content:`<p>.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written well.Article one written well</p>`
 };
 var htmlTemplate = `
@@ -21,10 +21,7 @@ var htmlTemplate = `
             Article-one - Kanishka Soni
         </title>
          <link href="/ui/style.css" rel="stylesheet" />
-        <style>
-
-            }
-        </style>
+        
     </head>
     <body>
         <div class = "container">
@@ -33,10 +30,10 @@ var htmlTemplate = `
                 </div>
                 <hr/>
                 <h3>
-                    Article-One
+                    $[heading]
                 </h3>
                 <div>
-                    September 21, 2016
+                    $[date]
                 </div>
                 <div>
                     $[content]
