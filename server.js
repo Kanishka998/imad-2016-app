@@ -10,39 +10,41 @@ var content = {
     date: 'sept 22 2016'
     content:`<p>.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written well.Article one written well</p>`;
 };
-var htmlTemplate = `
-
-<html>
+function createTemplate (data){
+    var htmlTemplate = `
     
-    <head>
+    <html>
         
-        <title>
+        <head>
             
-            $[title]
-        </title>
-         <link href="/ui/style.css" rel="stylesheet" />
-        
-    </head>
-    <body>
-        <div class = "container">
-               <div>
-                    <o href = "/">Home</o>
-                </div>
-                <hr/>
-                <h3>
-                    $[heading]
-                </h3>
-                <div>
-                    $[date]
-                </div>
-                <div>
-                    $[content]
-                </div>
-        </div>
-    </body>
-</html>
-
-`;
+            <title>
+                
+                $[title]
+            </title>
+             <link href="/ui/style.css" rel="stylesheet" />
+            
+        </head>
+        <body>
+            <div class = "container">
+                   <div>
+                        <o href = "/">Home</o>
+                    </div>
+                    <hr/>
+                    <h3>
+                        $[heading]
+                    </h3>
+                    <div>
+                        $[date]
+                    </div>
+                    <div>
+                        $[content]
+                    </div>
+            </div>
+        </body>
+    </html>
+    
+    `;
+}
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
