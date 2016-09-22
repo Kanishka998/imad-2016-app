@@ -11,7 +11,7 @@ var content = {
     content:'<p>.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written well.Article one written well</p>'
     'kskkdskskdfksdf'
 };
-var htmlTemplate = 
+var htmlTemplate = `
 
 <html>
     
@@ -29,7 +29,7 @@ var htmlTemplate =
     </head>
     <body>
         <div class = "container">
-                <div>
+               <div>
                     <o href = "/">Home</o>
                 </div>
                 <hr/>
@@ -46,7 +46,7 @@ var htmlTemplate =
     </body>
 </html>
 
-';
+`;
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
