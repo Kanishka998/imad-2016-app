@@ -11,11 +11,40 @@ var content = {
     content:'<p>.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written well.Article one written well</p>'
     'kskkdskskdfksdf'
 };
-var htmlTemplate = '
+var htmlTemplate = '<html>
+    
+    <head>
+        
+        <title>
+            
+            Article-one - Kanishka Soni
+        </title>
+         <link href="/ui/style.css" rel="stylesheet" />
+        <style>
 
-
-
-';
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "container">
+                <div>
+                    <o href = "/">Home</o>
+                </div>
+                <hr/>
+                <h3>
+                    Article-One
+                </h3>
+                <div>
+                    September 21, 2016
+                </div>
+                <div>
+                    <p>
+                        .Article one written well.Article one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written well.Article one written well
+                    </p>
+                </div>
+        </div>
+    </body>
+</html>';
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
