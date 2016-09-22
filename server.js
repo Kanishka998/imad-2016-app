@@ -11,9 +11,9 @@ var content = {
     content:'<p>.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written well.Article one written well</p>'
     'kskkdskskdfksdf'
 };
-var htmlTemplate = 
-'
-{<html>
+var htmlTemplate = '
+
+<html>
     
     <head>
         
@@ -40,13 +40,12 @@ var htmlTemplate =
                     September 21, 2016
                 </div>
                 <div>
-                    <p>
-                        .Article one written well.Article one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written well.Article one written well
-                    </p>
+                    $[content]
                 </div>
         </div>
     </body>
-</html>}
+</html>
+
 ';
 
 app.get('/', function (req, res) {
