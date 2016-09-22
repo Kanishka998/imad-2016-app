@@ -11,6 +11,13 @@ var content = {
     content:`<p>.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written well.Article one written well</p>`;
 };
 function createTemplate (data){
+    var title = data.title;
+    var date = data.date;
+    var heading = data.heading;
+    var content = data.content;
+    
+    
+    
     var htmlTemplate = `
     
     <html>
@@ -44,6 +51,7 @@ function createTemplate (data){
     </html>
     
     `;
+    return htmlTemplate
 }
 
 app.get('/', function (req, res) {
