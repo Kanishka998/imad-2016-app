@@ -6,19 +6,19 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {
-    article-one: {
+    'article-one': {
         title: 'Article one Kanishka Soni',
         heading:'Article-one',
         date: 'sept 2 2016',
         content:`<p>.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written well.Article one written well</p>`
     },
-    article-two:{
+    'article-two':{
          title: 'Article one Kanishka Soni',
         heading:'Article-one',
         date: 'sept 220 2016',
         content:`<p>.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written well.Article one written well</p>`
     },
-    article-three:{
+    'article-three':{
          title: 'Article one Kanishka Soni',
         heading:'Article-one',
         date: 'sept 202016',
