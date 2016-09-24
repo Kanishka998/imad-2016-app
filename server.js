@@ -6,10 +6,22 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {
-    var articleOne: {
+    articleOne: {
         title: 'Article one Kanishka Soni',
         heading:'Article-one',
-        date: 'sept 22 2016',
+        date: 'sept 2 2016',
+        content:`<p>.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written well.Article one written well</p>`
+    },
+    articleTwo:{
+         title: 'Article one Kanishka Soni',
+        heading:'Article-one',
+        date: 'sept 220 2016',
+        content:`<p>.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written well.Article one written well</p>`
+    },
+    articleThree:{
+         title: 'Article one Kanishka Soni',
+        heading:'Article-one',
+        date: 'sept 202016',
         content:`<p>.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written well.Article one written well</p>`
     }
 };
