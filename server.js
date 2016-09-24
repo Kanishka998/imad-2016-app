@@ -13,16 +13,16 @@ var articles = {
         content:`<p>.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written well.Article one written well</p>`
     },
     'article-two':{
-         title: 'Article one Kanishka Soni',
-        heading:'Article-one',
+         title: 'Article two Kanishka Soni',
+        heading:'Article-two',
         date: 'sept 220 2016',
-        content:`<p>.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written well.Article one written well</p>`
+        content:`<p>.Article two written well.Article two written well.Article two written well.Article two written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written well.Article one written well</p>`
     },
     'article-three':{
-         title: 'Article one Kanishka Soni',
-        heading:'Article-one',
-        date: 'sept 202016',
-        content:`<p>.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written well.Article one written well</p>`
+         title: 'Article three Kanishka Soni',
+        heading:'Article-three',
+        date: 'Sept 20 2016',
+        content:`<p>.Article three written well.Article three written well.Article three written well.Article three written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written wellArticle one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written wellArticle one written well.Article one written well.Article one written wellArticle one written well.Article one written well.Article one written well.Article one written well.Article one written well.Article one written well</p>`
     }
 };
 function createTemplate (data){
@@ -30,11 +30,8 @@ function createTemplate (data){
     var date = data.date;
     var heading = data.heading;
     var content = data.content;
-    
-    
-    
+  
     var htmlTemplate = `
-    
     <html>
         
         <head>
