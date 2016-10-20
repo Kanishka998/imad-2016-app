@@ -8,6 +8,14 @@ button.onclick = function() {
   
   // capture the request and store it in the variables
   Request.onreadystatechange = function(){
+      if(request.readyState===XMLHttpRequest.DONE)  {
+          // Then take some action
+          if (Request.status === 200){
+              
+              request.responseText                    // get access to value responded by request
+          }
+          
+      }    
       
       
   };
