@@ -12,7 +12,7 @@ button.onclick = function() {
           // Then take some action
           if (Request.status === 200){
               
-              request.responseText                    // get access to value responded by request
+             var counter =  request.responseText;                    // get access to value responded by request
           }
           
       }    
