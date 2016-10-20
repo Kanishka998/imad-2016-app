@@ -63,11 +63,4 @@ button.onclick = function()
         // we have to make request 
         
         
-        
-        
-        
-        
-        
-        
-        
     };
