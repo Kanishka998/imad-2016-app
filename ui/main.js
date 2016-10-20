@@ -26,3 +26,7 @@ button.onclick = function()
           request.open('GET','http://kanishka998.imad.hasura-app.io/counter',true);
           request.send(null);
     };
+    
+    
+    // code for Submit name
+    var nameinput = document.getElementById('name')
