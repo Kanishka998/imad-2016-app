@@ -7,20 +7,20 @@ button.onclick = function() {
   var Request = new XMLHttpRequest();
   
   // capture the request and store it in the variables
-  Request.onreadystatechange = function(){
+  Request.onreadystatechange = function()
+  {
       if(request.readyState===XMLHttpRequest.DONE)  {
           // Then take some action
           if (Request.status === 200){
               
              var counter =  request.responseText;                    // get access to value responded by request
+             var span = document.getElementById('count');
+             span.innerHTML = counter.toString();
           }
-          
       }    
-      
-      
   };
   
-  
-  
-    
+  // make the request
+  request.open('GET','http://kanishka998.imad.hasura-app.io/counter',true);
+  request.send(null);
 };
