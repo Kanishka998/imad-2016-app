@@ -29,4 +29,6 @@ button.onclick = function()
     
     
     // code for Submit name
-    var nameinput = document.getElementById('name')
+    var nameinput = document.getElementById('name');
+    var name = nameinput.value;
+    var submit = 
