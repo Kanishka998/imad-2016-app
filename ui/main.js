@@ -7,6 +7,10 @@ button.onclick = function() {
   var Request = new XMLHttpRequest();
   
   // capture the request and store it in the variables
+  Request.onreadystatechange = function(){
+      
+      
+  };
   
   
   
