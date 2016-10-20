@@ -20,7 +20,7 @@ button.onclick = function() {
       }    
   };
   
-  // make the request
+            // make the request
   request.open('GET','http://kanishka998.imad.hasura-app.io/counter',true);
   request.send(null);
 };
