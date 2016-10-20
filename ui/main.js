@@ -40,10 +40,8 @@ button.onclick = function()
         for (var i = 0; names.length;i++)
         {
             list+= '<li>' + names(i) + '</li>';
-            
-            
         }
-        
+        var ui = document.getElementById('namelist');
         
         
         
