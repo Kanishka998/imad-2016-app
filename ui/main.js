@@ -31,8 +31,25 @@ button.onclick = function()
     // code for Submit name
     var nameinput = document.getElementById('name');
     var name = nameinput.value;
-    var submit = document.getElementById('submit(t.btn)');
+    var submit = document.getElementById('submit_btn');
     submit.onclick = function()
     {
+        // we have to make request 
+        var names = ['name1' ,'name2', 'name3'];
+        var list = '';
+        for (var i = 0; names.length;i++)
+        {
+            list+= '<li>' + names(i) + '</li>';
+            
+            
+        }
+        
+        
+        
+        
+        
+        
+        
+        
         
     };
