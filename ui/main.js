@@ -34,15 +34,34 @@ button.onclick = function()
     var submit = document.getElementById('submit_btn');
     submit.onclick = function()
     {
+        var request = new XMLHttpRequest();
+          
+          // Create a request Object
+          request.onreadystatechange = function()
+          {
+              if(request.readyState===XMLHttpRequest.DONE)
+              {
+                  // Then take some action
+                  if (request.status === 200)
+                  { 
+                         var names = ['name1' ,'name2', 'name3'];
+                        var list = '';
+                        for (var i = 0; names.length;i++)
+                        {
+                            list+= '<li>' + names(i) + '</li>';
+                        }
+                        var ul = document.getElementById('namelist');
+                        ul.innerHTML = list;
+                      
+                  }
+              }    
+          };
+          
+                    // make the request
+          request.open('GET','http://kanishka998.imad.hasura-app.io/counter',true);
+          request.send(null);
         // we have to make request 
-        var names = ['name1' ,'name2', 'name3'];
-        var list = '';
-        for (var i = 0; names.length;i++)
-        {
-            list+= '<li>' + names(i) + '</li>';
-        }
-        var ul = document.getElementById('namelist');
-        ul.innerHTML = list;
+        
         
         
         
