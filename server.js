@@ -74,6 +74,18 @@ app.get('/counter', function(req,res){
     counter = counter  + 1;
 res.send(counter.toString());
 });
+
+var names = [];
+app.get('/submit-name',function(req,res)
+{
+    var name = req.query.name;
+    names.push(name);
+    res.send(JSON.stringify(names));
+    
+    // JSON javascript object Notation    --- converts javascripts objects into the strings
+});
+
+
 app.get('/:articleName', function (req,res){
     //feature of express files fetches file name
     var articleName = req.params.articleName;
@@ -89,15 +101,6 @@ app.get('/ui/style.css', function (req, res) {
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
-});
-var names = [];
-app.get('/submit-name/:name',function(req,res)
-{
-    var name = res.params.name;
-    names.push(name);
-    res.send(JSON.stringify(names));
-    
-    // JSON javascript object Notation    --- converts javascripts objects into the strings
 });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
