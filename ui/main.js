@@ -5,17 +5,17 @@ button.onclick = function()
   
             // make request to counter endpoint 
   
-  var Request = new XMLHttpRequest();
+  var request = new XMLHttpRequest();
   
   // Create a request Object
-  Request.onreadystatechange = function()
+  request.onreadystatechange = function()
   {
-      if(Request.readyState===XMLHttpRequest.DONE)
+      if(request.readyState===XMLHttpRequest.DONE)
       {
           // Then take some action
-          if (Request.status === 200)
+          if (request.status === 200)
           {  
-             var counter =  Request.responseText;                    // get access to value responded by request
+             var counter =  request.responseText;                    // get access to value responded by request
              var span = document.getElementById('count');
              span.innerHTML = counter.toString();
           }
@@ -23,6 +23,6 @@ button.onclick = function()
   };
   
             // make the request
-  Request.open('GET','http://kanishka998.imad.hasura-app.io/counter',true);
-  Request.send(null);
+  request.open('GET','http://kanishka998.imad.hasura-app.io/counter',true);
+  request.send(null);
 };
